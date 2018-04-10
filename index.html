@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BANG! Card Game: Pick And Ban Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <script src="main.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            BANG! Character Pick Phase
+        </a>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-8" id="cards">
+                <div class='tierS'>
+                    <h2>Tier S</h2>
+                    <a href="#" id="card-1" onclick="parseName(this.id);">
+                        <img id="card" src="./images/TierS/suzylafayettesm.jpg" alt="suzylafayettesm">
+                    </a>
+                    <a href="#" id="card-2" onclick="parseName(this.id);">
+                        <img id="card" src="./images/TierS/josedelgadosm.jpg" alt="josedelgadosm">
+                    </a>
+                </div>
+
+                <div id='tierA'>
+                    <h2>Tier A</h2>
+                </div>
+
+                <div id='tierB'>
+                    <h2>Tier B</h2>
+                </div>
+
+                <div id='tierC'>
+                    <h2>Tier C</h2>
+                </div>  
+                
+                <div id='tierF'>
+                    <h2>Tier F</h2>
+                </div>
+            </div>
+
+            <div class="col-4" id="status-tab">
+                <h3 id="Status-name"></h3>
+                <h3 id="Status-health"></h3>
+                <h3 id="Status-ability"></h3>
+                <button type="button" class="btn btn-primary btn-lg" id="pick">Pick</button>
+                <button onclick="functionName()" type="button" class="btn btn-primary btn-lg" id="ban">Ban</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
